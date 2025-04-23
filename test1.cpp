@@ -2,5 +2,5 @@
 
 auto main() -> int {
 
-	std::cout << "Test/n";
+	std::cout << "Test/n"<<std::endl;
 }
