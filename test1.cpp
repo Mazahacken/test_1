@@ -10,6 +10,7 @@ public:
 
 };
 auto main() -> int {
-
+	Int x(5);
+	x.getDate();
 	std::cout << "Test/n"<<std::endl;
 }
