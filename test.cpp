@@ -14,6 +14,6 @@ auto main() -> int {
 	std::unique_ptr<int> ptr2 = std::move(ptr);
 	std::shared_ptr<char> sharptr = std::make_shared<char>('H');
 	std::shared_ptr<int> sharptr2(new int(30));
-	std::unique_ptr<int[]> arr(new int[](5));
+	std::unique_ptr<int[]> arr(new int[](5));//
 	return 0;
 }
