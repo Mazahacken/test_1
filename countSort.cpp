@@ -11,6 +11,7 @@ int getMax(int* arr, int n)
 
 void countSort(int* arr, int n)
 {
+	setlocale(LC_ALL, "Rus")
 	//шаг 0 Найти максимальное число
 	int max = getMax(arr, n);
 	//шаг 1 Создать временые массивы для подсчета сачтот и хранения отсортированых значений
