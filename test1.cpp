@@ -11,6 +11,8 @@ public:
 };
 auto main() -> int {
 	Int x(5);
-	std::cout<<x.getDate()<<std::endl;
+	std::cout << x.getDate() << std::endl;
+	x.setDate(9);
+	std::cout << x.getDate() << std::endl;
 	std::cout << "Test/n"<<std::endl;
 }
