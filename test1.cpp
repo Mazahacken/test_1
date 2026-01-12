@@ -91,7 +91,27 @@ int Queue::peek()
 		return 0;
 	return m_front->m_date;
 }
-
+int search(int arr[], int size, int x)
+{
+	int i;
+	for (i = 0; i < size; i++)
+		if (arr[i] == x)
+			return i;
+	return -1;
+}
+int binarySearch(int arr[], int l, int r, int x)
+{
+	if (r >= l)
+	{
+		int mid = l + (r - l) / 2;
+		if (arr[mid] == x)
+			return mid;
+		if (arr[mid] > x)
+			return binarySearch(arr, l, mid - 1, x);
+		return binarySearch(arr, mid + 1, r, x);
+	}
+	return -1;
+}
 
 
 auto main() -> int {
