@@ -112,6 +112,10 @@ int binarySearch(int arr[], int l, int r, int x)
 	}
 	return -1;
 }
+int number = 88;
+int* numberPtr;
+numberPtr = &number;
+int* numberPtr2 = &number;
 
 
 auto main() -> int {
